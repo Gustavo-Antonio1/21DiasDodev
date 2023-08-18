@@ -6,6 +6,6 @@ if(fome === 'n' || dinheiro === 'n' ) {
     console.log("Hoje a janta será em casa")
 } else if (fome === 's' && dinheiro === 's' && restaurante === 'n') {
     console.log("Peça um delivery!")
-} else{
+}else if(fome === 's' && dinheiro === 's' && restaurante === 's') {
     console.log("Hoje o jantar será no seu restaurante preferido!")
 }

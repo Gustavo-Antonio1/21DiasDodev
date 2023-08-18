@@ -7,6 +7,6 @@ if (idade < 18 || cnh === 'n' ) {
     console.log(nome + ", você não pode dirigir.")
 }else if(idade >= 18 && cnh === 's' && carro === 'n') {
     console.log(nome + ", você pode dirigir mas não tem um carro")
-}else{
+}else if(idade >= 18 && cnh === 's' && carro === 's') {
     console.log(nome + ", você será o motorista!")
 }
