@@ -19,3 +19,18 @@ let idadeEmDias = idade * 365
 console.log("sua idade em meses é: " + idadeEmMeses + " meses")
 console.log("sua idade em semanas é: " + idadeEmSemanas + " semanas")
 console.log("sua idade em dias é: " + idadeEmDias + " dias")
+
+let imc = peso / (altura * altura)
+
+if( imc < 18.5) {
+    console.log("Magreza")
+}else if(imc < 25) {
+    console.log("Normal")
+}else if (imc <= 30) {
+    console.log("Sobrepeso")
+}else {
+    console.log("Obesidade")
+}
+
+let anoNascimento = 2023 - idade
+console.log("voce nasceu em: " + anoNascimento)
