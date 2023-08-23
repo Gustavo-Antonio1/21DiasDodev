@@ -1,3 +1,5 @@
+let continuar = 's'
+do {
 let nome = prompt("Insira aqui o seu nome")
 let idade = Number(prompt("Insira aqui a sua idade"))
 let peso = Number (prompt("Insira aqui o seu peso em kg"))
@@ -33,4 +35,15 @@ if( imc < 18.5) {
 }
 
 let anoNascimento = 2023 - idade
+let idadeAgora = 0
 console.log("voce nasceu em: " + anoNascimento)
+
+for (let anonasceu = anoNascimento; anonasceu <= 2023; anonasceu++) {
+    console.log(anonasceu + " = " + idadeAgora + " anos de idade")
+    idadeAgora++
+}
+
+continuar = prompt("Deseja inserir outras informacoes? (s/n)")
+
+}while(continuar === 's')
+
