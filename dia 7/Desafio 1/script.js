@@ -33,3 +33,4 @@ console.log("Média geral dos alunos: " + mediaGeral)
 console.log("Quantidade de homens que enviaram notas: " + quantidadeHomens)
 console.log("Quantidade de mulheres com nota maior que 7: " + quantidadeMulheresAcima7)
 console.log("Maior nota entre os homens: " + maiorNotaHomens)
+
