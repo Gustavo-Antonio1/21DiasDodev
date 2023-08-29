@@ -3,7 +3,7 @@ class Aluno {
     idade
     areaAtuacao
     constructor(nome, idade) {
-        this.name = nome
+        this.nome = nome
         this.idade = idade
     }
 
