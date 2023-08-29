@@ -21,7 +21,14 @@ switch(opcao) {
     case 2:
         nomeInserido = prompt("Insira aqui o nome do usuario")
         senhaInserida = prompt("insira aqui a sua senha")
+        for (let i = 0; i < nomes.length; i++) {
+            if(nomes[i] === nomeInserido) {
+                if(senhas[i] === senhaInserida) 
+                    console.log("Login efetuado com sucesso")
+                } else if (i == (nomes.length - 1)) {
+                    console.log("Login invalido")
+                }
+             }
+             break;
+    
 
-}
-
-}
