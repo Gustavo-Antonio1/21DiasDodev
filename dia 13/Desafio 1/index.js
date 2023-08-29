@@ -11,7 +11,7 @@ class Carro {
     }
 
     calcularTempoPercurso(distancia) {
-        let resultado = distancia / (velocidadeMaxima / aceleracao);
+        let resultado = distancia / (this.velocidadeMaxima / this.aceleracao);
         return resultado;
     }
 }
@@ -29,12 +29,30 @@ class Corrida {
     nome
     tipo
     distancia
-    vencedor
-    constructor(nome, tipo, distancia, vencedor) {
+    vencedor = ''
+    constructor(nome, tipo, distancia,) {
         this.nome = nome
         this.tipo = tipo
         this.distancia = distancia
-        this.vencedor = vencedor
+    }
+
+    VerificarVencedor(carros) {
+        let menorTempo = 10000
+        for (let i = 0; i < carros.length; i++) {
+            let tempo = carros[i].calcularTempoPercurso(this.distancia)
+            if(tempo < menorTempo) {
+                menorTempo = tempo
+                this.vencedor = carros[i].nome
+            }         
+        }
+    }
+
+    MostrarVencedor(carros) {
+        this.VerificarVencedor(carros)
+        console.log("O vencedor e: " + this.vencedor)
     }
 }
+
+let corrida = new Corrida("Monza", "Formula 1", 305)
+corrida.MostrarVencedor(carros)
 
