@@ -8,7 +8,7 @@ function EscolhaUsuario() {
     return opcao;
 }
 
-function CadastrarUsuario () {
+function CadastrarUsuario() {
     let nomeInserido = prompt("Por gentileza insira o nome de usuario.")
     let senhaInserida = prompt("Por gentileza insira a senha desejada.")
 
@@ -16,4 +16,14 @@ function CadastrarUsuario () {
     senhas.push(senhaInserida)
 }
 
-CadastrarUsuario()
+function LoginUsuario(nome, senha) {
+    nome = prompt("Insira aqui o nome de usuario")
+    senha = prompt("Insira aqui a sua senha")
+
+    if(nomes.includes(nome) && senhas.includes(senha)) {
+        console.log("Login efetuado com sucesso")
+    } else {
+        console.log("login invalido")
+    }
+}
+
